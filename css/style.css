@@ -1,0 +1,33 @@
+body {
+	background: url(../img/background.png);
+}
+
+h3 {
+	color: red;
+}
+form {
+	margin-top: 50px;
+}
+#form1.well {
+	width: 50%;
+	margin: 0px 25%;
+	background: none;
+	border: #E6F195;
+}
+.item img {
+	width: 100%;
+}
+li.dropdown {
+	height: 50px;
+	padding: 17px 17px;
+	color: white;
+	cursor: pointer;
+}
+
+.thumbnail {
+	width: 33%;
+	float: left;
+}
+figure>img {
+	width: 99%;
+}
