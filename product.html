@@ -44,19 +44,11 @@
       <section class="row">
         <article class="col-md-3 col-sm-6 col-xs-12 well" ng-repeat="products in headers | filter:query">
           <h2>{{products.name}}</h2>
-          <h3 class="text-right">{{products.price}}</h3>
           <img class="img-responsive" ng-src="img/{{products.img}}" alt="">
           <p><strong>{{products.name}}</strong>{{products.description}}</p>
           <a class="btn btn-link" href="{{products.link}}">Читати більше ..</a>
           <a class="btn btn-link" href="#" ng-click="buttonShow()">Відгуки {{products.rewiev.length}} ..</a>
-          <div ng-show="show">
-            <h4>Reviews</h4>
-            <form name="first" ng-submit="first.$valid && addMessage($event)" novalidate>
-              <label>Імя:<br> <input ng-model="name" type="text" required placeholder="Ваше імя"></label><br>
-              <label>Ваш відгук або пропозиція: <textarea ng-model="msg" required  placeholder="Type a response..."></textarea></label><br>
-              <input type="submit" value="Надіслати"> 
-          </form>
-          </div>
+          <h3 class="text-right">{{products.price}}</h3>
         </article>
       </section>
       <footer class="row navbar-fixed-bottom">
